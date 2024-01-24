@@ -90,7 +90,14 @@ p {
   margin: 0;
 }
 
-.profile-image,
+.profile-image {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 20px;
+}
+
 .social-icon {
   display: flex;
   width: 30px;
