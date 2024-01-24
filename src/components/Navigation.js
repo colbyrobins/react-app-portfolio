@@ -1,11 +1,10 @@
-// Navigation.js
 import React from 'react';
 import { Link } from 'react-router-dom';
 
 const Navigation = () => {
   return (
     <nav>
-      <ul>
+      <ul className='nav-list'>
         <li><Link to="/about">About Me</Link></li>
         <li><Link to="/portfolio">Portfolio</Link></li>
         <li><Link to="/contact">Contact</Link></li>

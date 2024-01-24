@@ -11,11 +11,12 @@ import Resume from './components/Resume';
 const App = () => {
   return (
     <Router>
-      <div>
+      <div className='app-container'>
         <Header />
         <main>
           <Routes>
-          <Route path="/about" element={<AboutMe />} />
+            <Route path="/" element={<AboutMe />} />
+            <Route path="/about" element={<AboutMe />} />
             <Route path="/portfolio" element={<Portfolio />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/resume" element={<Resume />} />
