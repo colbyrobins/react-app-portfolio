@@ -7,7 +7,7 @@ const AboutMe = () => {
       <h2>About Me</h2>
       <div className="content-container">
         <img
-          src="https://placekitten.com/200/200"
+          src="./images/about-me.jpg"
           alt="Placeholder"
           className="profile-image"
         />
