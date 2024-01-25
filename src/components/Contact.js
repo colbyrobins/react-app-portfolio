@@ -19,6 +19,7 @@ const ContactForm = () => {
 
   return (
     <div className="contact-form-container">
+      <h2>Contact Me</h2>
       <form onSubmit={handleSubmit} className="form">
         <label>
           Name:
