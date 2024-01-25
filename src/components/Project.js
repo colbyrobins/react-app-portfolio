@@ -23,7 +23,7 @@ const Project = ({ title, description, image, deployedUrl, repoLink }) => {
                 />
               </div>
             </div>
-            <p className='project-description'>{description}</p>
+            <p> {description}</p>
           </div>
       </div>
 
