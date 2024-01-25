@@ -141,25 +141,16 @@ p {
   justify-content: space-evenly;
 }
 
-.project-link {
-  text-decoration: none;
-  margin: 10px;
-  overflow: hidden;
-  border-radius: 8px;
-  width: 500px; 
-  height: 500px;
-}
-
 .project-card {
   position: relative;
+  overflow: hidden;
+  width: 500px; 
+  height: 500px;
+  margin: 10px;
+  border-radius: 8px;
   border: 1px solid #ccc;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   transition: transform 0.2s ease-in-out;
-  border-radius: 8px;
-}
-
-.project-card:hover {
-  transform: scale(1.05);
 }
 
 .project-image {
@@ -169,24 +160,72 @@ p {
   border-radius: 8px;
 }
 
-.project-content {
-  position: absolute;
-  top: 50%; 
-  left: 50%; 
-  transform: translate(-50%, -50%);
-  opacity: 0;
-  transition: opacity 0.3s ease-in-out;
-  z-index: 2;
+.project-card:hover {
+  transform: scale(1.05);
 }
 
-.project-card:hover .project-content {
+.project-details {
+  font: bold;
+  position: absolute;
+  top: 10px; 
+  left: 10px; 
+  text-align: left;
+  width: calc(100% - 20px);
+  display: flex;
+  flex-direction: column;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.project-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+  font-style: bold;
+  font-size: 30px;
+  color: var(--text-color)
+}
+
+.project-header h3 {
+  margin: 0;
+  cursor: pointer;
+}
+
+.project-header h3:hover {
+  transform: scale(1.05);
+}
+
+.project-description {
+  margin-top: 10px;
+  font-size: 30px;
+  color: var(--text-color)
+}
+
+.project-card:hover .project-image {
+  filter: blur(30px); 
+}
+
+.project-card:hover .project-details {
   opacity: 1; 
 }
 
-.project-content-text {
-  color: #fff;
-  font-size: 18px;
+.project-details-text {
+  color: var(--text-color);
+  font-size: 16px;
   text-align: center;
+}
+
+.github-icon {
+  display: flex;
+  width: 30px;
+  height: 30px;
+  transition: transform 0.2s ease-in-out;
+  border-radius: 20px;
+}
+
+.github-icon:hover {
+  transform: scale(1.2);
 }
 
 @media (max-width: 600px) {
